@@ -11,6 +11,8 @@ class LDBrowser extends Component<LDBrowserProps, HocState> {
 
   constructor(props: LDBrowserProps) {
     super(props);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     const { ssrFlags, clientSideID, ldUser } = window;
 
     console.log(`initializing ld client with ${clientSideID}...`);

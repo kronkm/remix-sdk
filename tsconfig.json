@@ -4,7 +4,6 @@
     "target": "ES6",
     "lib": ["ES2019", "DOM.Iterable", "dom"],
     "types": ["node"],
-    "typeRoots": ["./src/types"],
     "module": "commonjs",
     "declaration": true,
     "strict": true,
