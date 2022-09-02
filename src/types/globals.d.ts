@@ -8,5 +8,3 @@ declare global {
     clientSideID: string;
   }
 }
-
-export {};
