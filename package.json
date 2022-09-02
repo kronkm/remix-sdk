@@ -25,7 +25,8 @@
     "lint": "eslint --cache --quiet src/**/*.ts*",
     "prepublishOnly": "npm run build",
     "prettier": "prettier --write '**/*.@(js|ts|tsx|json|css)'",
-    "link-dev": "./link-dev.sh"
+    "link-dev": "./link-dev.sh",
+    "typecheck": "tsc --project tsconfig.json"
   },
   "repository": {
     "type": "git",

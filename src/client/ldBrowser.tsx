@@ -1,4 +1,4 @@
-import React, { Component, ReactNode } from 'react';
+import { Component, ReactNode } from 'react';
 import { initialize, LDFlagChangeset, LDFlagSet } from 'launchdarkly-js-client-sdk';
 
 import { LDContext as HocState, Provider } from '../shared/context';
@@ -31,6 +31,8 @@ class LDBrowser extends Component<LDBrowserProps, HocState> {
   }
 
   render() {
+    // This is fixed by importing React, but that is flagged as an unused local by our tsconfig
+    // eslint-disable-next-line react/react-in-jsx-scope
     return <Provider value={this.state}>{this.props.children}</Provider>;
   }
 }
